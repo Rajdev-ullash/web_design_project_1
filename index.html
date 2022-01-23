@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="image/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onClick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -27,9 +29,82 @@
                     <li><a href="">CONTACT US</a></li>
                 </ul>
             </div>
+            <i class="fas fa-bars" onClick="showMenu()"></i>
         </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet Ipsam eaque obcaecati totam repudiandae doloremque corporis<br /> quo expedita, officiis sequi deleniti quibusdam.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
     </section>
 
+    <!--Course section-->
+
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente harum corporis quidem nesciunt nostrum non, distinctio at debitis nisi quam quisquam fuga sequi quod, blanditiis ratione dolorem veniam voluptate autem.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente harum corporis quidem nesciunt nostrum non, distinctio at debitis nisi quam quisquam fuga sequi quod, blanditiis ratione dolorem veniam voluptate autem.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente harum corporis quidem nesciunt nostrum non, distinctio at debitis nisi quam quisquam fuga sequi quod, blanditiis ratione dolorem veniam voluptate autem.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Campus-->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="image/london.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right="0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right="-200px"
+        }
+    </script>
 
 </body>
 
